@@ -1,5 +1,54 @@
 .bgnd{
     background-color: #E5E5E5;
     max-height: max-content;
+    height: 100vh;
+}
+
+.titleStyle{
+    width: 329px;
+    height: 57px;
+    font-family: Marmelad;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    color: #000000;
+    margin-top: 2vh;
+
+}
+
+.dishImage{
+    width: 300px;
+    height: 300px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.titletext{
+    font-family: Marmelad;
+    font-weight: bold;
+    color: black;
+    padding-top: 4vh;
+    font-size: 40px;
+}
+
+.dishDesc{
+    font-family: Marmelad;
+    /*font-weight: bold;*/
+    color: black;
+    font-style: normal;
+    font-size: 30px;
+
+}
+
+.price{
+    color: Red;
+    font-family: Marmelad;
+
+    font-style: normal;
+    font-size: 30px;
+    width: 376px;
+    height: 43px;
+
 }
 
