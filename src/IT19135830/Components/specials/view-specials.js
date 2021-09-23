@@ -14,8 +14,7 @@ class viewSpecials extends Component {
     }
 
     componentDidMount() {
-        let date = '2021-08-27'
-            // moment(new Date()).format("YYYY-MM-DD")
+        let date = moment(new Date()).format("YYYY-MM-DD");
         console.log(date);
         axios.get(`http://localhost:5000/user/get-todays-special-dishes/${date}`)
             .then((response) => {
@@ -33,10 +32,10 @@ class viewSpecials extends Component {
             <div className='bgnd' style={{background:'#E5E5E5', maxHeight:'100vh'}}>
                 <Row>
                     <Col sm='1'></Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <h1 className='titleStyle'>Today's Specials</h1>
                     </Col>
-                    <Col sm ='5'></Col>
+                    <Col sm ='3'></Col>
                     <Col sm='3'>
                         <div className="input-group" style={{marginTop:'3vh'}}>
                             <input type="search"

@@ -1,0 +1,22 @@
+.emailTopic{
+    width: 1499px;
+    height: 34px;
+
+    font-family: Metrophobic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+
+}
+
+
+.inputTextBox {
+    width: 600px;
+    height: 40px;
+    background: #EFEFEF;
+    border-radius: 20px;
+    /*margin-left: 20px;*/
+    padding-left: 2vh;
+    padding-right: 2vh;
+}

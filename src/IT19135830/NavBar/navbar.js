@@ -67,7 +67,7 @@ class navBar extends Component {
 
                     <ul className="navbar-nav navTitles">
                         <li className="nav-item">
-                            <a className="nav-link navbar-brand active" style={{ color: 'white' }} href="/agenda" >
+                            <a className="nav-link navbar-brand active" style={{ color: 'white' }} href="/subscriber" >
                             Email Subscriber
                             </a>
                         </li>

@@ -1,11 +1,10 @@
 .bgnd{
     background-color: #E5E5E5;
-    max-height: max-content;
     height: 100vh;
+
 }
 
 .titleStyle{
-    width: 329px;
     height: 57px;
     font-family: Marmelad;
     font-style: normal;
