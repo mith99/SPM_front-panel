@@ -51,7 +51,7 @@ class ViewOffersFrontPanel extends Component {
                     style={{
                       marginTop: "20pt",
                       marginBottom: "20pt",
-                      marginLeft: "50%",
+                      marginLeft: "45%",
                       marginRight: "0pt",
                     }}
                   >
@@ -62,6 +62,9 @@ class ViewOffersFrontPanel extends Component {
                       name="searchKey"
                       aria-label="Search"
                       aria-describedby="search-addon"
+                      style={{
+                        borderRadius: "107px",
+                      }}
                       value={this.state.searchKey}
                       onChange={this.onChange}
                     />
@@ -69,6 +72,11 @@ class ViewOffersFrontPanel extends Component {
                     <button
                       type="button"
                       className="btn btn-primary"
+                      style={{
+                        marginLeft: "8pt",
+                        borderRadius: "30pt",
+                        width: "107px",
+                      }}
                       onClick={(e) => this.search(e, this.state.searchKey)}
                     >
                       Search

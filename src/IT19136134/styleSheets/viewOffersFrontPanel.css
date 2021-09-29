@@ -1,5 +1,10 @@
+body {
+    background-color: #E5E5E5;
+}
+
 .topicviewOffer {
     margin-top: 20pt;
+    font-size: 30pt;
     font-family: Merriweather;
     font-style: italic;
     font-weight: bold;
