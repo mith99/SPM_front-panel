@@ -23,21 +23,28 @@ class subscriber extends Component {
     onSubmit(e){
         e.preventDefault();
 
+
+
         let emailSubscriber = {
             email:this.state.email,
             status:this.state.status
         }
-
         console.log(emailSubscriber);
 
-        axios.post('http://localhost:5000/newsletter/subscribe', emailSubscriber)
-            .then(response => {
-                alert("Successfully Subscribed");
-            })
-            .catch(error => {
-                console.log(error.message);
-                alert(error.message);
-            })
+        if(this.state.email === undefined){
+            alert("Please enter your email")
+        }
+        else {
+            axios.post('http://localhost:5000/newsletter/subscribe', emailSubscriber)
+                .then(response => {
+                    alert(response.data)
+                    this.setState({email: ""});
+                })
+                .catch(error => {
+                    console.log(error.message);
+                    alert(error.message);
+                })
+        }
     }
 
 
@@ -64,20 +71,19 @@ class subscriber extends Component {
 
                 <br/>
 
-                <div className='text-center'>
+                <div className='text-center' style={{paddingTop:"2vh"}}>
 
-                <Row>
-                    <Col sm='10'>
-                        <h3 style={{fontFamily:'Metrophobic', alignContent:'center', marginLeft:'80vh'}}>Please enter your Email to Subscribe</h3>
-                    </Col>
-                </Row>
+
+                        <h3 style={{fontFamily:'Metrophobic', alignContent:'center'}}>Please enter your Email to Subscribe</h3>
+
                 </div>
                     <Row>
-                        <div className='text-center'>
+                        <div className='text-center'  style={{paddingTop:"2vh"}}>
                         <Col >
                             <input
                                 className="inputTextBox"
                                 name="email"
+                                type="email"
                                 value={this.state.email}
                                 onChange={this.onChange}
                                 required
@@ -97,6 +103,10 @@ class subscriber extends Component {
                     </Col>
                     </div>
                 </Row>
+
+                <div className='text-center' style={{paddingTop:"5vh"}}>
+                    <a className="unsubLink" href="/unsubscriber">Click here to Unsubscribe</a>
+                </div>
             </div>
         )
 
