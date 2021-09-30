@@ -7,11 +7,19 @@ import moment from "moment";
 class viewSpecials extends Component {
     constructor(props) {
         super(props);
+        this.onChange = this.onChange.bind(this);
+        this.search =  this.search.bind(this);
         this.state = {
             specials:[],
-            specialsLen:0
+            specialsLen:0,
+            search:'',
         }
     }
+
+    onChange(e){
+        this.setState({[e.target.name]:e.target.value})
+    }
+
 
     componentDidMount() {
         let date = moment(new Date()).format("YYYY-MM-DD");
@@ -19,9 +27,20 @@ class viewSpecials extends Component {
         axios.get(`http://localhost:5000/user/get-todays-special-dishes/${date}`)
             .then((response) => {
                 this.setState({specials: response.data.data});
-                console.log(this.state.specials);
                 this.setState({specialsLen: this.state.specials.length})
-                console.log(this.state.specialsLen)
+            });
+
+
+    }
+
+    search(e,keyword){
+        console.log(keyword)
+        let date = moment(new Date()).format("YYYY-MM-DD");
+        console.log(date)
+        axios.get(`http://localhost:5000/user/get-todays-special-dishes/${date}/${keyword}`)
+            .then((response) => {
+                this.setState({specials: response.data.data});
+                console.log(this.state.specials);
             });
 
 
@@ -41,18 +60,18 @@ class viewSpecials extends Component {
                             <input type="search"
                                    className="form-control rounded"
                                    placeholder="Search"
-                                   name='searchKey'
+                                   name='search'
                                    aria-label="Search"
                                    aria-describedby="search-addon"
-                                   // value={this.state.searchKey}
+                                   value={this.state.search}
                                    onChange={this.onChange}
                             />
 
                             <button type="button"
                                     className="btn btn-primary"
-                                    // onClick={(e) =>
-                                    //     this.search(e, this.state.searchKey)
-                                    // }
+                                    onClick={(e) =>
+                                        this.search(e, this.state.search)
+                                    }
                             >Search
                             </button>
                         </div>
