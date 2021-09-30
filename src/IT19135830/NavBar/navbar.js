@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 // import { Col, Row } from "reactstrap";
+import logo from '../Components/images/logo.png'
 
 
 class navBar extends Component {
@@ -13,9 +14,9 @@ class navBar extends Component {
             <div className=" container-fluid">
                 <div className="collapse navbar-collapse d-flex justify-content-around">
                 <ul className="navbar-nav navTitles">
-                        <li className="nav-item">
+                        <li className="nav-i]tem">
                             <a className="nav-link navbar-brand active" style={{ color: 'white' }} href="/home-page" >
-                                Image
+                                <p><img src={logo} style={{paddingTop:'2vh', paddingLeft:'4vh'}}/></p>
                             </a>
                         </li>
                     </ul>
