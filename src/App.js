@@ -8,7 +8,11 @@ function App() {
     <div className="App">
       <OrdersPage />
       {/* <Router>
-        <Switch>          
+        <Switch>
+		<Route path="/delivery-service" component={DeliveryServicePage} />
+        	<Route path="/orders" component={OrdersPage} />
+        	<Route path="/feedback" component={CreateFeedback} />
+        	<Route path="/" component={LandingPage} />          
         </Switch>
       </Router> */}
     </div>
