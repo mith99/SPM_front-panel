@@ -1,0 +1,106 @@
+.imageBoxNew {
+    width: 321px;
+    height: 296px;
+    left: 29px;
+    top: 217px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    margin-top: 10%;
+}
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    /* margin: 100px 400px; */
+}
+.categoryNamefont {
+    font-family: Marmelad;
+    font-weight: bold;
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+    
+}
+.topicviewCategory {
+    margin-top: 20pt;
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0%;
+    text-align: right;
+}
+body {
+    background-position: center;
+    background-color: #E5E5E5;
+    background-attachment: fixed;
+}
+.singleMealName{
+    
+font-family: Miama;
+font-style: italic;
+font-weight: normal;
+font-size: 48px;
+line-height: 150px;
+text-align:  center;
+/* identical to box height */
+
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mealDetails{
+
+    font-family: Metrophobic;
+    font-weight: normal;
+    color: black;
+    font-size: 36px;
+    line-height: 44px;
+    text-align:  center;
+
+
+}
+.mealView{
+    align-content: center;
+    margin-top: 5%;
+}
+.inputTextBox{
+   
+    width: 97px;
+    height: 69px;
+    left: 579px;
+    top: 408px;
+    background: #FFFFFF;
+    
+}
+.btn{
+    width: 227px;
+    height: 74px;
+    left: 977px;
+    top: 593px;
+    background: #63B85C;
+    border-radius: 34px;
+}
+.qtyTxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
+    font-size: 30px;
+    line-height: 40px;
+}
+.foo{
+    margin-top:6%;
+}
+.singleMealImage{
+    position: absolute;
+width: 479px;
+height: 544px;
+left: 29px;
+top: 140px;
+filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 20px;
+}
