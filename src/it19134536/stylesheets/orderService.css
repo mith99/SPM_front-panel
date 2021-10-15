@@ -1,0 +1,13 @@
+.topicviewOrder {
+    margin-top: 25pt;
+    font-size: 37pt;
+    font-family: Marmelad;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0%;
+    text-align: left;
+    width: fit-content;
+    margin-left: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

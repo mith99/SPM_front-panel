@@ -1,0 +1,52 @@
+ 
+
+.bngImage {
+    background: url(../images/rest.jpg) no-repeat center;
+    background-size: cover;
+    padding-right: 4vh;
+    width: 100vh;
+    height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+
+.rowstyle {
+    padding-top: 7vh;
+}
+
+.headTopic {
+    font-style: normal;
+    font-weight: 550;
+    font-size: 55px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.headDate {
+    font-family: Post No Bills Colombo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.landingButton {
+    position: absolute;
+    width: 478px;
+    height: 129px;
+    left: 674px;
+    top: 489px;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    background: #D57D2D;
+    box-shadow: 9px 17px 4px rgba(0, 0, 0, 0.65);
+    border-radius: 115px;
+}
+ 
